@@ -52,14 +52,14 @@ const defaulStyles = {
   },
   controllText: {
     color: '#fff',
-    fontSize: 22,
-    fontWeight: 'bold',
+    fontSize: 18,
+    fontFamily: 'Sukhumvit Set'
   },
   dotStyle: {
     backgroundColor: 'rgba(255,255,255,.3)',
-    width: 13,
-    height: 13,
-    borderRadius: 7,
+    width: 5,
+    height: 5,
+    borderRadius: 2.5,
     marginLeft: 7,
     marginRight: 7,
     marginTop: 7,
@@ -67,6 +67,9 @@ const defaulStyles = {
   },
   activeDotStyle: {
     backgroundColor: '#fff',
+    width: 8,
+    height: 8,
+    borderRadius: 4,
   },
   paginationContainer: {
     position: 'absolute',
@@ -92,13 +95,11 @@ const defaulStyles = {
     height: 50,
   },
   nextButtonText: {
-    fontSize: 25,
-    fontWeight: 'bold',
-    fontFamily: 'Arial',
+    fontSize: 18,
+    fontFamily: 'Sukhumvit Set'
   },
   full: {
-    height: 80,
-    width: 100,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -393,8 +394,8 @@ AppIntro.propTypes = {
 AppIntro.defaultProps = {
   dotColor: 'rgba(255,255,255,.3)',
   activeDotColor: '#fff',
-  rightTextColor: '#fff',
-  leftTextColor: '#fff',
+  rightTextColor: '#000000',
+  leftTextColor: '#000000',
   pageArray: [],
   onSlideChange: () => {},
   onSkipBtnClick: () => {},
@@ -402,7 +403,7 @@ AppIntro.defaultProps = {
   onNextBtnClick: () => {},
   doneBtnLabel: 'Done',
   skipBtnLabel: 'Skip',
-  nextBtnLabel: '›',
+  nextBtnLabel: 'Next',
   defaultIndex: 0,
   showSkipButton: true,
   showDoneButton: true,
