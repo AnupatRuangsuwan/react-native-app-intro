@@ -14,7 +14,7 @@ export const SkipButton = ({
 }) => {
   return (
     <View style={[styles.btnContainer, {
-        paddingBottom: 5,
+        bottom: 20,
         opacity: isSkipBtnShow ? 1 : 0,
       }]}>
       <TouchableOpacity
